@@ -1,22 +1,32 @@
 ---
 import ctgSoftware from "../assets/Ctg_Prod/ctg_software.png";
 import Layout from "../layouts/Layout.astro";
+import softwareimg from "../assets/Ctg_Prod/software.png";
 ---
 
 <section id="ctg-product" class="mt-16 mb-16 flex flex-col gap-4">
     <div class="lg:h-24 flex justify-center items-center font-bold lg:text-3xl ">
-        <h2 class="text-5xl">Tienda Grupo Nec</h2>
+        <h2 class="lg:text-5xl text-center text-2xl font-light">Tienda Grupo Nec</h2>
     </div>
-    <div class="flex justify-center">
-        <ul class="flex flex-wrap w-full gap-4 p-2 justify-center">
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
-            <li class="lg:w-64 w-40 "><a href=""><img src={ctgSoftware.src} alt=""></a></li>
+    <div class="flex justify-center flex-col w-full">
+        <ul class="w-full flex flex-col gap-4">
+            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
+            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
+            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
+            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
         </ul>
+        <!---
+        <ul class="flex flex-wrap w-full gap-4 p-2 justify-center">
+            <li class="lg:w-64 w-40 "><a href="/productos/servidores-componentes"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/equipos-computo"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/perifericos-accesorios"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/redes-conectividad"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/componentes-hardware"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/almacenamiento"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/dispositivos-entrada-salida"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/sistemas-energia"><img src={ctgSoftware.src} alt=""></a></li>
+            <li class="lg:w-64 w-40 "><a href="/productos/software"><img src={ctgSoftware.src} alt=""></a></li>
+        </ul>
+        -->
     </div>
 </section>

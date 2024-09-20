@@ -2,20 +2,22 @@
 import sliderL1 from "../assets/Slider/sld1.jpg";
 import sliderL2 from "../assets/Slider/sld2.jpg";
 import sliderL3 from "../assets/Slider/sld3.jpg";
+import fondo1 from "../assets/Slider/fondo-slider.png";
 ---
 
 <div class="relative">
-  <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000" class="w-full border-2">
+  <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000" class="w-full border-2 px-2 lg:h-[85vh]">
     <swiper-slide class="relative">
-      <a href="/"><img src={sliderL1.src} class="block lg:hidden w-full" /><img src={sliderL1.src} class="hidden lg:block hw-full" /></a>
-      
+      <img src={fondo1.src} class="block lg:hidden w-full" /><img src={fondo1.src} class="hidden lg:block w-full" />
     </swiper-slide>
+    <!--
     <swiper-slide>
       <a href="/"><img src={sliderL2.src} class="block lg:hidden w-full" /><img src={sliderL2.src} class="hidden lg:block hw-full" /></a>
     </swiper-slide>
     <swiper-slide>
       <a href="/"><img src={sliderL3.src} class="block lg:hidden w-full" /><img src={sliderL3.src} class="hidden lg:block hw-full" /></a>
     </swiper-slide>
+    -->
   </swiper-container>
 </div>
 

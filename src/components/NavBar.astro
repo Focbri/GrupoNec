@@ -34,9 +34,9 @@ import LogoGN from "../assets/Logos/GRUPONEC_LOGO_OFICIAL_2.png"
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-      <div class="flex flex-col items-center justify-center h-full space-y-4">
+      <div class="flex flex-col items-center justify-center h-full space-y-4 md:space-x-1">
         {["/#ctg-product", "/#soluciones", "/nosotros", "/clientes", "/contacto"].map((href, index) => (
-          <a href={href} class={`text-[#000b42] hover:bg-slate-300 p-3 rounded-2xl text-2xl`}>
+          <a href={href} class={`text-[#000b42] hover:bg-slate-300 p-3 md:py-1 md:px-3 rounded-2xl text-2xl md:text-lg`}>
             {["Productos", "Soluciones", "Nosotros", "Clientes", "Contacto"][index]}
           </a>
         ))}
