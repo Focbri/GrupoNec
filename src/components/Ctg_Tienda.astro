@@ -2,18 +2,26 @@
 import ctgSoftware from "../assets/Ctg_Prod/ctg_software.png";
 import Layout from "../layouts/Layout.astro";
 import softwareimg from "../assets/Ctg_Prod/software.png";
+import windowLog from "../assets/Ctg_Prod/windows.png";
+import avast from "../assets/Ctg_Prod/avast.png";
+import adobe from "../assets/Ctg_Prod/adobe.png";
+import eset from "../assets/Ctg_Prod/eset.png";
+import office from "../assets/Ctg_Prod/office.png";
+import sql from "../assets/Ctg_Prod/sql.png";
 ---
 
 <section id="ctg-product" class="mt-16 mb-16 flex flex-col gap-4">
     <div class="lg:h-24 flex justify-center items-center font-bold lg:text-3xl ">
         <h2 class="lg:text-5xl text-center text-2xl font-light">Tienda Grupo Nec</h2>
     </div>
-    <div class="flex justify-center flex-col w-full">
-        <ul class="w-full flex flex-col gap-4">
-            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
-            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
-            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
-            <li class="flex justify-center"><img src={softwareimg.src} alt="" class="rounded-2xl"></li>
+    <div class="flex justify-center w-full">
+        <ul class="flex gap-8 flex-wrap w-[80%] justify-center">
+            <li class="w-[20%]"><a href=""><img src={windowLog.src} alt="" class="hover:shadow-lg rounded-lg"></a></li>
+            <li class="w-[20%]"><a href=""><img src={avast.src} alt="" class="hover:shadow-lg rounded-lg"></a></li>
+            <li class="w-[20%]"><a href=""><img src={adobe.src} alt="" class="hover:shadow-lg rounded-lg"></a></li>
+            <li class="w-[20%]"><a href=""><img src={eset.src} alt="" class="hover:shadow-lg rounded-lg"></a></li>
+            <li class="w-[20%]"><a href=""><img src={office.src} alt="" class="hover:shadow-lg rounded-lg"></a></li>
+            <li class="w-[20%]"><a href=""><img src={sql.src} alt="" class="hover:shadow-lg rounded-lg"></a></li>
         </ul>
         <!---
         <ul class="flex flex-wrap w-full gap-4 p-2 justify-center">

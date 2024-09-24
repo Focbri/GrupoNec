@@ -3,12 +3,21 @@ import sliderL1 from "../assets/Slider/sld1.jpg";
 import sliderL2 from "../assets/Slider/sld2.jpg";
 import sliderL3 from "../assets/Slider/sld3.jpg";
 import fondo1 from "../assets/Slider/fondo-slider.png";
+import ciscofondo from "../assets/Slider/ciscoswitch.png";
 ---
 
 <div class="relative">
   <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000" class="w-full lg:h-[85vh]">
     <swiper-slide class="relative">
-      <img src={fondo1.src} class="block lg:hidden w-full" /><img src={fondo1.src} class="hidden lg:block w-full" />
+      <div class="w-full flex lg:flex-row flex-col-reverse">
+        <div class="lg:w-2/4 bg-[#192855] text-[#fff] flex justify-center items-center flex-col p-2 lg:p-4 gap-4">
+          <h2 class="text-2xl">Hola mundo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, necessitatibus! Neque cupiditate nulla ipsa beatae facilis? Fugit, soluta porro. Consectetur ut aperiam explicabo saepe, voluptate harum iure nesciunt. Molestiae, iste? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, necessitatibus! Neque cupiditate nulla ipsa beatae facilis? Fugit, soluta porro. Consectetur ut aperiam explicabo saepe, voluptate harum iure nesciunt. Molestiae, iste?</p>
+        </div>
+        <div class="lg:w-2/4">
+          <img src={ciscofondo.src} class="block lg:hidden w-full" /><img src={ciscofondo.src} class="hidden lg:block w-full" />
+        </div>
+      </div>
     </swiper-slide>
     <!--
     <swiper-slide>
