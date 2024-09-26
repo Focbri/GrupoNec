@@ -19,78 +19,84 @@ import discoInterno from "../assets/Ctg_Prod/almacenamiento/disco_interno.png";
 import memoria_ram from "../assets/Ctg_Prod/componentes_hardware/memoria_ram.png";
 import motherboard from "../assets/Ctg_Prod/componentes_hardware/motherboard.png";
 import partesPc from "../assets/Ctg_Prod/componentes_hardware/partes_pc.png";
+
+import impresoras from "../assets/Ctg_Prod/perifericos_accesorios/impresoras.png";
+import camaras from "../assets/Ctg_Prod/perifericos_accesorios/camaras_seguridad.png";
+import suministrosImpre from "../assets/Ctg_Prod/perifericos_accesorios/suministros_impresora.png";
+import baterias from "../assets/Ctg_Prod/perifericos_accesorios/baterias.png";
+import lamparas from "../assets/Ctg_Prod/perifericos_accesorios/lamparas_proyector.png";
+import adaptadores from "../assets/Ctg_Prod/perifericos_accesorios/adaptadores.png";
+
+import kvmSwitch from "../assets/Ctg_Prod/redes_conectividad/kvm_switch.png";
+import switches from "../assets/Ctg_Prod/redes_conectividad/switch.png";
+import router from "../assets/Ctg_Prod/redes_conectividad/router.png";
+
+import laptop from "../assets/Ctg_Prod/equipos/laptop.png";
+import pc from "../assets/Ctg_Prod/equipos/pc.png";
+import pda from "../assets/Ctg_Prod/equipos/pda_handheld.png";
+
+import servidor from "../assets/Ctg_Prod/servidores_componentes/servidores.png";
+import gabinetes from "../assets/Ctg_Prod/servidores_componentes/gabinetes_racks.png";
+import tapeBack from "../assets/Ctg_Prod/servidores_componentes/tape_backups.png";
+import discoServ from "../assets/Ctg_Prod/servidores_componentes/disco_duro.png";
+import memoriaServ from "../assets/Ctg_Prod/servidores_componentes/memoria.png";
 ---
 
 <section id="ctg-product" class="mt-16 mb-16 flex flex-col gap-4">
-    <div class="lg:h-24 flex justify-center items-center font-bold lg:text-3xl ">
+    <div class="lg:h-24 h-12 flex justify-center items-center font-bold lg:text-3xl bg-[#192855] text-[#fff]">
         <h2 class="lg:text-5xl text-center text-2xl font-light">Tienda Grupo Nec</h2>
     </div>
+
+    <!------------------CTG REDES Y CONECTIVIDAD EMPRESARIAL/HOGAR------ -->
     <div class="flex  flex-col justify-center w-full">
         <div class="w-full flex justify-center my-2">
-            <h2 class="w-[80%] text-2xl border-b-2">Categoría Software</h2>
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Redes y Conectividad Empresarial</h2>
         </div>
         <div class="w-full flex justify-center">
-            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[80%] justify-center">
-                <li class="w-[20%]"><a href=""><img src={windowLog.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={avast.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={adobe.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={eset.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={office.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={sql.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={autoDesk.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[50%] w-[30%]"><a href=""><img src={switches.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
             </ul>
         </div>
     </div>
 
-    <!------------------CTG DISP. ENTRADA Y SALIDA------ -->
     <div class="flex  flex-col justify-center w-full">
         <div class="w-full flex justify-center my-2">
-            <h2 class="w-[80%] text-2xl border-b-2">Categoría Disp. Entrada y Salida</h2>
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Redes y Conectividad Hogar</h2>
         </div>
         <div class="w-full flex justify-center">
-            <ul class="flex gap-8 flex-wrap w-[80%] justify-center">
-                <li class="w-[20%]"><a href=""><img src={proyector.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={scanners.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={router.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={kvmSwitch.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
             </ul>
         </div>
     </div>
 
-    <!------------------CTG DISP. EQUIPOS DE PROTECCION ELECTRICA------ -->
+    <!------------------CTG EQUIPOS DE COMPUTO------ -->
     <div class="flex  flex-col justify-center w-full">
         <div class="w-full flex justify-center my-2">
-            <h2 class="w-[80%] text-2xl border-b-2">Categoría Equipos de Protección Eléctrica</h2>
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Equipos de Cómputo</h2>
         </div>
         <div class="w-full flex justify-center">
-            <ul class="flex gap-8 flex-wrap w-[80%] justify-center">
-                <li class="w-[20%]"><a href=""><img src={ups.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={transformadores.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={laptop.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={pc.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={pda.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
             </ul>
         </div>
     </div>
 
-    <!------------------CTG ALMACENAMIENTO------ -->
+    <!------------------CTG SERVIDORES COMPONENTES------ -->
     <div class="flex  flex-col justify-center w-full">
         <div class="w-full flex justify-center my-2">
-            <h2 class="w-[80%] text-2xl border-b-2">Categoría Almacenamiento</h2>
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Servidores y Componentes</h2>
         </div>
         <div class="w-full flex justify-center">
-            <ul class="flex gap-8 flex-wrap w-[80%] justify-center">
-                <li class="w-[20%]"><a href=""><img src={discoExterno.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={discoInterno.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!------------------CTG COMPONENTES HARDWARE------ -->
-    <div class="flex  flex-col justify-center w-full">
-        <div class="w-full flex justify-center my-2">
-            <h2 class="w-[80%] text-2xl border-b-2">Categoría Componentes Hardware</h2>
-        </div>
-        <div class="w-full flex justify-center">
-            <ul class="flex gap-8 flex-wrap w-[80%] justify-center">
-                <li class="w-[20%]"><a href=""><img src={memoria_ram.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={motherboard.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={partesPc.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={servidor.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={gabinetes.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={tapeBack.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={discoServ.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={memoriaServ.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
             </ul>
         </div>
     </div>
@@ -98,13 +104,87 @@ import partesPc from "../assets/Ctg_Prod/componentes_hardware/partes_pc.png";
     <!------------------CTG PERIFERICOS Y ACCESORIOS------ -->
     <div class="flex  flex-col justify-center w-full">
         <div class="w-full flex justify-center my-2">
-            <h2 class="w-[80%] text-2xl border-b-2">Categoría Periféricos y Accesorios</h2>
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Periféricos y Accesorios</h2>
         </div>
         <div class="w-full flex justify-center">
-            <ul class="flex gap-8 flex-wrap w-[80%] justify-center">
-                <li class="w-[20%]"><a href=""><img src={memoria_ram.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={motherboard.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
-                <li class="w-[20%]"><a href=""><img src={partesPc.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={impresoras.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={camaras.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={suministrosImpre.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={baterias.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={lamparas.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={adaptadores.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------CTG DISP. ENTRADA Y SALIDA------ -->
+    <div class="flex  flex-col justify-center w-full">
+        <div class="w-full flex justify-center my-2">
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Disp. Entrada y Salida</h2>
+        </div>
+        <div class="w-full flex justify-center">
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={proyector.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={scanners.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------CTG DISP. EQUIPOS DE PROTECCION ELECTRICA------ -->
+    <div class="flex  flex-col justify-center w-full">
+        <div class="w-full flex justify-center my-2">
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Equipos de Protección Eléctrica</h2>
+        </div>
+        <div class="w-full flex justify-center">
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={ups.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={transformadores.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------CTG ALMACENAMIENTO------ -->
+    <div class="flex  flex-col justify-center w-full">
+        <div class="w-full flex justify-center my-2">
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Almacenamiento</h2>
+        </div>
+        <div class="w-full flex justify-center">
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={discoExterno.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={discoInterno.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------CTG COMPONENTES HARDWARE------ -->
+    <div class="flex  flex-col justify-center w-full">
+        <div class="w-full flex justify-center my-2">
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Componentes Hardware</h2>
+        </div>
+        <div class="w-full flex justify-center">
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={memoria_ram.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={motherboard.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={partesPc.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!------------------CTG SOFTWARE------ -->
+    <div class="flex  flex-col justify-center w-full">
+        <div class="w-full flex justify-center my-2">
+            <h2 class="w-[90%] lg:text-2xl text-lg border-b-2">Software</h2>
+        </div>
+        <div class="w-full flex justify-center">
+            <ul class="flex lg:gap-8 gap-4 flex-wrap w-[90%] justify-center">
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={windowLog.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={avast.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={adobe.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={eset.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={office.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={sql.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
+                <li class="lg:w-[20%] w-[30%]"><a href=""><img src={autoDesk.src} alt="" class="hover:shadow-2xl rounded-lg"></a></li>
             </ul>
         </div>
     </div>

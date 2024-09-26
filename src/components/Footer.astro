@@ -3,11 +3,44 @@ import LogoGN from "../assets/Logos/lastlogo.png";
 ---
 
 <!------------Laptop/Desktop------------ -->
-<footer class="bg-slate-200 p-6 hidden lg:flex flex-col">
-    <div class="container mx-auto flex lg:justify-between items-center h-full lg:flex-row flex-col">
+<footer class="bg-slate-200 hidden lg:flex flex-col">
+    <div class="container p-6 mx-auto flex lg:justify-between items-center h-full lg:flex-row flex-col">
 
-        <div class="flex justify-center gap-16 w-full">
-            <div class="flex flex-col">
+        <div class="flex justify-center lg:gap-12 w-full">
+            <div class="h-full w-[22%] flex items-center">
+                <a href="/">
+                  <img src={LogoGN.src} alt="" class="h-16" />
+                </a>
+            </div>
+    
+            <div class="flex flex-col w-[26%]">
+                <h2 class="text-2xl border-b-2 border-slate-400 border-solid text-center">Comprar Productos</h2>
+                <ul class="flex flex-col justify-center gap-1 mt-4">
+                    <li><a href="">Redes y Conectividad Empresarial</a></li>
+                    <li><a href="">Redes y Conectividad Hogar</a></li>
+                    <li><a href="">Equipos de Cómputo</a></li>
+                    <li><a href="">Servidores y Componentes</a></li>
+                    <li><a href="">Periféricos y Accesorios</a></li>
+                    <li><a href="">Disp. Entrada y Salida</a></li>
+                    <li><a href="">Equipos de Protección Eléctrica</a></li>
+                    <li><a href="">Almacenamiento</a></li>
+                    <li><a href="">Componentes Hardware</a></li>
+                    <li><a href="">Software</a></li>
+                </ul>
+            </div>
+    
+            <div class="flex flex-col w-[26%]">
+                <h2 class="text-2xl border-b-2 border-slate-400 border-solid">Atención al cliente</h2>
+                <ul class="flex flex-col justify-center gap-1 mt-4">
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="">Ubícanos</a></li>
+                    <li><a href="">Consulte acerca de un producto</a></li>
+                    <li><a href="">Productos Recomendados</a></li>
+                    <li><a href="">Servicio Técnico</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col w-[26%]">
                 <h2 class="text-2xl border-b-2 border-slate-400 border-solid">Contáctenos</h2>
                 <ul class="flex flex-col justify-center gap-1 mt-4">
                     <!-- Enlace a la ubicación en Google Maps -->
@@ -41,37 +74,6 @@ import LogoGN from "../assets/Logos/lastlogo.png";
                     </li>
                 </ul>
             </div>
-    
-            <div class="flex flex-col">
-                <h2 class="text-2xl border-b-2 border-slate-400 border-solid text-center">Comprar Productos</h2>
-                <ul class="flex flex-col justify-center gap-1 mt-4">
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                    <li><a href="">Laptops</a></li>
-                </ul>
-            </div>
-    
-            <div class="flex flex-col">
-                <h2 class="text-2xl border-b-2 border-slate-400 border-solid">Atención al cliente</h2>
-                <ul class="flex flex-col justify-center gap-1 mt-4">
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">Ubícanos</a></li>
-                    <li><a href="">Consulte acerca de un producto</a></li>
-                    <li><a href="">Productos Recomendados</a></li>
-                    <li><a href="">Servicio Técnico</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="lg:h-full h-10">
-            <a href="/">
-              <img src={LogoGN.src} alt="" class="h-full" />
-            </a>
         </div>
     </div>
 
@@ -83,9 +85,9 @@ import LogoGN from "../assets/Logos/lastlogo.png";
             <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg></a></li>
         </ul>
     </div>
-    <hr class="w-full border-slate-400 border-solid my-4">
-    <div class="w-full flex justify-center">
-        <span class="text-center">Web Creada por Joan todos los derechos reservados 2024</span>
+    
+    <div class="w-full flex justify-center bg-[#000] text-[#fff] py-4 mt-2">
+        <span class="text-center">Todos los Derechos Reservados 2024 GRUPO NEC. <a href="https://github.com/Focbri" target="_blank" class="hover:text-[#F7D2A9]">Web Creada por Joan</a></span>
     </div>
 </footer>
 
@@ -94,7 +96,7 @@ import LogoGN from "../assets/Logos/lastlogo.png";
     <div class="container mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center">
         <!-- Contact Section -->
         <details class="w-full lg:w-auto mb-4 lg:mb-0">
-            <summary class="text-2xl border-b-2 border-slate-400 cursor-pointer">Contáctenos</summary>
+            <summary class="lg:text-2xl text-lg border-b-2 border-slate-400 cursor-pointer">Contáctenos</summary>
             <ul class="flex flex-col justify-center gap-1 mt-4 px-4">
                 <li>
                     <a href="https://maps.app.goo.gl/CVHT3TS8spTQZDh99" target="_blank" class="flex items-center gap-1">
@@ -132,7 +134,7 @@ import LogoGN from "../assets/Logos/lastlogo.png";
 
         <!-- Products Section -->
         <details class="w-full lg:w-auto mb-4 lg:mb-0">
-            <summary class="text-2xl border-b-2 border-slate-400 cursor-pointer">Comprar Productos</summary>
+            <summary class="lg:text-2xl text-lg border-b-2 border-slate-400 cursor-pointer">Comprar Productos</summary>
             <ul class="flex flex-col justify-center gap-1 mt-4 px-4">
                 <li><a href="">Laptops</a></li>
                 <li><a href="">Tablets</a></li>
@@ -147,7 +149,7 @@ import LogoGN from "../assets/Logos/lastlogo.png";
 
         <!-- Customer Service Section -->
         <details class="w-full lg:w-auto mb-4 lg:mb-0">
-            <summary class="text-2xl border-b-2 border-slate-400 cursor-pointer">Atención al cliente</summary>
+            <summary class="lg:text-2xl text-lg border-b-2 border-slate-400 cursor-pointer">Atención al cliente</summary>
             <ul class="flex flex-col justify-center gap-1 mt-4 px-4">
                 <li><a href="">Sobre Nosotros</a></li>
                 <li><a href="">Ubícanos</a></li>
@@ -158,9 +160,9 @@ import LogoGN from "../assets/Logos/lastlogo.png";
         </details>
 
         <!-- Logo Section -->
-        <div class="lg:h-full h-20 flex justify-center items-center">
+        <div class="flex justify-center items-center">
             <a href="/">
-                <img src={LogoGN.src} alt="Logo" class="h-full" />
+                <img src={LogoGN.src} alt="Logo" class="lg:h-16 h-10" />
             </a>
         </div>
     </div>
@@ -176,7 +178,7 @@ import LogoGN from "../assets/Logos/lastlogo.png";
     </div>
 
     <hr class="w-full border-slate-400 border-solid my-4">
-    <div class="flex w-full ">
+    <div class="flex w-full bg-[#000]">
         <span class="text-center text-sm">Todos los Derechos Reservados. Web Creada por Joan</span>
     </div>
 </footer>
