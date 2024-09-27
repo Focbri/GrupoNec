@@ -1,4 +1,5 @@
 ---
+// Importación de imágenes de partners
 import HP from "../assets/Partners/hp.png";
 import Microsoft from "../assets/Partners/microsoft.png";
 import Epson from "../assets/Partners/epson.png";
@@ -21,49 +22,63 @@ import Seagate from "../assets/Partners/seagate.png";
 import ViewSonic from "../assets/Partners/viewsonic.png";
 import Xerox from "../assets/Partners/xerox.png";
 import Zebra from "../assets/Partners/zebra.png";
+
+// Lista de partners con nombre e imagen
+const partners = [
+  HP, Microsoft, Epson, Dlink, Cisco, Canon, Bosch, Apple, Amd, M3, Intel, Lenovo,
+  Lexmark, Lg, Logitech, Motorola, Panasonic, PosD, Seagate, ViewSonic, Xerox, Zebra
+];
 ---
 
-<div class="flex flex-col gap-2 lg:gap-8">
+<div class="flex flex-col gap-4 lg:gap-16 lg:mb-16 mb-8">
   <div class="lg:h-24 h-12 flex justify-center items-center font-bold lg:text-3xl bg-[#192855] text-[#fff]">
     <h2 class="lg:text-5xl text-center text-2xl font-light">Nuestros Partners</h2>
-</div>
-  <div class="relative">
-      <swiper-container  loop="true" autoplay autoplay-delay="6000" class="lg:w-[80%] border-2 flex items-center mx-4 lg:mx-auto">
-        <swiper-slide class="relative">
-            <div class="lg:flex flex flex-wrap lg:gap-4 gap-2 w-full h-full justify-center items-center">
-              <img src={HP.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Microsoft.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Epson.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Dlink.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Cisco.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Canon.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Bosch.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Apple.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Amd.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={M3.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Intel.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Lenovo.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-            </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="lg:flex flex flex-wrap lg:gap-4 gap-2 w-full h-full justify-center items-center">
-              <img src={Lexmark.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Lg.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Logitech.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Motorola.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Panasonic.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={PosD.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Seagate.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={ViewSonic.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Xerox.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-              <img src={Zebra.src} class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
-            </div>
-        </swiper-slide>
-      </swiper-container>
-    </div>
-</div>
+  </div>
   
-  <script>
-    import { register } from "swiper/element/bundle";
-    register();
-  </script>
+  <div class="relative">
+    <swiper-container loop="true" autoplay autoplay-delay="6000" class="lg:w-[80%] border flex items-center mx-4 lg:mx-auto">
+      <swiper-slide>
+        <div class="flex flex-wrap gap-4 w-full h-full justify-center items-center p-2">
+          <img src={HP.src} alt="HP" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Microsoft.src} alt="Microsoft" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Epson.src} alt="Epson" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Dlink.src} alt="Dlink" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Cisco.src} alt="Cisco" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Apple.src} alt="Apple" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Amd.src} alt="AMD" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={M3.src} alt="3M" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="flex flex-wrap gap-4 w-full h-full justify-center items-center p-2">
+          <img src={Intel.src} alt="Intel" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Lenovo.src} alt="Lenovo" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Lexmark.src} alt="Lexmark" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Lg.src} alt="LG" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Logitech.src} alt="Logitech" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Canon.src} alt="Canon" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Bosch.src} alt="Bosch" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={PosD.src} alt="PosD" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="flex flex-wrap gap-4 w-full h-full justify-center items-center p-2">
+          <img src={Motorola.src} alt="Motorola" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Panasonic.src} alt="Panasonic" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Seagate.src} alt="Seagate" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={ViewSonic.src} alt="ViewSonic" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Xerox.src} alt="Xerox" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+          <img src={Zebra.src} alt="Zebra" class="w-[20%] lg:grayscale grayscale-0 lg:hover:grayscale-0" />
+        </div>
+      </swiper-slide>
+
+    </swiper-container>
+  </div>
+</div>
+
+<script>
+  import { register } from "swiper/element/bundle";
+  register();
+</script>

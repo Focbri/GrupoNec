@@ -1,310 +1,89 @@
 ---
-import fondo from "../assets/Soluciones/fondo.png";
-import reparcompu from "../assets/Soluciones/reparacionComput.jpg";
+// Soluciones.astro
+import CardSolucion from '../components/CardSolucion.astro';
 import repEquipos from "../assets/Soluciones/reparacionEquipos.png";
 import cableadoRed from "../assets/Soluciones/cableadoRed.png";
 import licSoftware from "../assets/Soluciones/licenciaSoftware.png";
 import installCam from "../assets/Soluciones/instCamaras.png";
 import servidores from "../assets/Soluciones/serServidores.png";
-import seguridadInfo from "../assets/Soluciones/seguridadInf.png"; 
+import seguridadInfo from "../assets/Soluciones/seguridadInf.png";
+
+const soluciones = [
+  {
+    imgSrc: repEquipos.src,
+    title: "Reparación de Equipos",
+    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Reparación%20de%20Equipos"
+  },
+  {
+    imgSrc: cableadoRed.src,
+    title: "Cableado de Red",
+    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Cableado%20de%20Red"
+  },
+  {
+    imgSrc: licSoftware.src,
+    title: "Licencia de Software",
+    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Licencia%20de%20Software"
+  },
+  {
+    imgSrc: installCam.src,
+    title: "Instalación de Cámaras",
+    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%Instalación%20de%20Cámaras"
+  },
+  {
+    imgSrc: servidores.src,
+    title: "Servidores",
+    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Servicio%20de%20Servidores"
+  },
+  {
+    imgSrc: seguridadInfo.src,
+    title: "Seguridad de la Información",
+    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Seguridad%20de%20la%20Información"
+  }
+];
 ---
 
 <section id="soluciones" class="w-full my-12">
-    <div class="lg:h-24 h-12 flex justify-center items-center font-bold lg:text-3xl bg-[#192855] text-[#fff]">
-        <h2 class="lg:text-5xl text-center text-2xl font-light">Soluciones</h2>
-    </div>
-    <div class="relative">
-        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000000" class="hidden lg:flex lg:w-[90%]   items-center">
-          <swiper-slide class="relative">
-              <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
-                <div class="w-[30%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                    <img src={repEquipos.src} alt="">
-                    <div class="w-full flex justify-center">
-                        <span class="w-auto text-center text-2xl bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Reparación de Equipos</span>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                        </ul>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                    </div>
-                </div>
-                <div class="w-[30%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                    <img src={cableadoRed.src} alt="">
-                    <div class="w-full flex justify-center">
-                        <span class="w-auto text-center text-2xl bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Cableado de Red</span>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                        </ul>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                    </div>
-                </div>
-                <div class="w-[30%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                    <img src={licSoftware.src} alt="">
-                    <div class="w-full flex justify-center">
-                        <span class="w-auto text-center text-2xl bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Licencia de Software</span>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                        </ul>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                    </div>
-                </div>
-              </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
-                <div class="w-[30%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                    <img src={installCam.src} alt="">
-                    <div class="w-full flex justify-center">
-                        <span class="w-auto text-center text-2xl bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Instalación de Cámaras</span>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                        </ul>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                    </div>
-                </div>
-                <div class="w-[30%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                    <img src={servidores.src} alt="">
-                    <div class="w-full flex justify-center">
-                        <span class="w-auto text-center text-2xl bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Servidores</span>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                        </ul>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                    </div>
-                </div>
-                <div class="w-[30%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                    <img src={seguridadInfo.src} alt="">
-                    <div class="w-full flex justify-center">
-                        <span class="w-auto text-center text-2xl bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Seguridad de la Información</span>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                            <li>Descripción 1</li>
-                        </ul>
-                    </div>
-                    <div class="w-full flex justify-center">
-                        <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                    </div>
-                </div>
-              </div>
-            </swiper-slide>
-        </swiper-container>
+  <div class="lg:h-24 h-14 flex justify-center items-center font-bold lg:text-3xl bg-[#192855] text-[#fff] mb-8">
+    <h2 class="lg:text-5xl text-center text-2xl font-light">Soluciones</h2>
+  </div>
+  <div class="relative">
+    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000000" class="hidden lg:flex w-[90%] items-center">
+      <swiper-slide>
+        <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
+          <CardSolucion imgSrc={soluciones[0].imgSrc} title={soluciones[0].title} descriptions={soluciones[0].descriptions} whatsappLink={soluciones[0].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[1].imgSrc} title={soluciones[1].title} descriptions={soluciones[1].descriptions} whatsappLink={soluciones[1].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[2].imgSrc} title={soluciones[2].title} descriptions={soluciones[2].descriptions} whatsappLink={soluciones[2].whatsappLink}/>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
+          <CardSolucion imgSrc={soluciones[3].imgSrc} title={soluciones[3].title} descriptions={soluciones[3].descriptions} whatsappLink={soluciones[3].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[4].imgSrc} title={soluciones[4].title} descriptions={soluciones[4].descriptions} whatsappLink={soluciones[4].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[5].imgSrc} title={soluciones[5].title} descriptions={soluciones[5].descriptions} whatsappLink={soluciones[5].whatsappLink}/>
+        </div>
+      </swiper-slide>
+    </swiper-container>
 
-        <!------------------------Movil ------------------------->
-        <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000000" class="flex lg:hidden lg:w-[80%] items-center">
-            <swiper-slide class="relative">
-                <div class="flex w-full h-full justify-center items-center">
-                  <div class="w-[70%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                      <img src={repEquipos.src} alt="">
-                      <div class="w-full flex justify-center">
-                          <span class="w-auto text-center text-lg bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Reparación de Equipos</span>
-                      </div>
-                      <div class="w-full flex justify-center">
-                          <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                              <li>Descripción 1</li>
-                          </ul>
-                      </div>
-                      <div class="w-full flex justify-center">
-                          <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                      </div>
-                  </div>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex w-full h-full justify-center items-center">
-                    <div class="w-[70%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                        <img src={cableadoRed.src} alt="">
-                        <div class="w-full flex justify-center">
-                            <span class="w-auto text-center text-lg bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Cableado de Red</span>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                                <li>Descripción 2</li>
-                                <li>Descripción 2</li>
-                                <li>Descripción 2</li>
-                                <li>Descripción 2</li>
-                                <li>Descripción 2</li>
-                            </ul>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                        </div>
-                    </div>
-                  </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex w-full h-full justify-center items-center">
-                    <div class="w-[70%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                        <img src={licSoftware.src} alt="">
-                        <div class="w-full flex justify-center">
-                            <span class="w-auto text-center text-lg bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Licencia de Software</span>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                                <li>Descripción 3</li>
-                                <li>Descripción 3</li>
-                                <li>Descripción 3</li>
-                                <li>Descripción 3</li>
-                                <li>Descripción 3</li>
-                            </ul>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                        </div>
-                    </div>
-                  </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex w-full h-full justify-center items-center">
-                    <div class="w-[70%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                        <img src={installCam.src} alt="">
-                        <div class="w-full flex justify-center">
-                            <span class="w-auto text-center text-lg bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Instalación de Cámaras</span>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                                <li>Descripción 4</li>
-                                <li>Descripción 4</li>
-                                <li>Descripción 4</li>
-                                <li>Descripción 4</li>
-                                <li>Descripción 4</li>
-                            </ul>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                        </div>
-                    </div>
-                  </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex w-full h-full justify-center items-center">
-                    <div class="w-[70%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                        <img src={servidores.src} alt="">
-                        <div class="w-full flex justify-center">
-                            <span class="w-auto text-center text-lg bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Servidores</span>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                                <li>Descripción 5</li>
-                                <li>Descripción 5</li>
-                                <li>Descripción 5</li>
-                                <li>Descripción 5</li>
-                                <li>Descripción 5</li>
-                            </ul>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                        </div>
-                    </div>
-                  </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="flex w-full h-full justify-center items-center">
-                    <div class="w-[70%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] p-2">
-                        <img src={seguridadInfo.src} alt="">
-                        <div class="w-full flex justify-center">
-                            <span class="w-auto text-center text-lg bg-[#1159A0] hover:bg-[#0F9CD8] rounded text-[#fff] p-2">Seguridad de la Información</span>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <ul class="flex flex-col list-disc w-[80%] text-[#999]">
-                                <li>Descripción 6</li>
-                                <li>Descripción 6</li>
-                                <li>Descripción 6</li>
-                                <li>Descripción 6</li>
-                                <li>Descripción 6</li>
-                            </ul>
-                        </div>
-                        <div class="w-full flex justify-center">
-                            <button class="w-auto bg-black text-white p-2 rounded hover:bg-[#767676]">Más Información</button>
-                        </div>
-                    </div>
-                  </div>
-            </swiper-slide>  
-          </swiper-container>
-      </div>
-      
-      <script>
-        import { register } from "swiper/element/bundle";
-        register();
-      </script>
+    {/* Versión móvil */}
+    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000000" class="flex lg:hidden w-full items-center">
+      {soluciones.map(solucion => (
+        <swiper-slide>
+          <div class="flex w-full h-full justify-center items-center">
+            <CardSolucion imgSrc={solucion.imgSrc} title={solucion.title} descriptions={solucion.descriptions} whatsappLink={solucion.whatsappLink}/>
+          </div>
+        </swiper-slide>
+      ))}
+    </swiper-container>
+  </div>
+
+  <script>
+    import { register } from "swiper/element/bundle";
+    register();
+  </script>
 </section>
