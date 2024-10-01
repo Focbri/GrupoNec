@@ -1,0 +1,54 @@
+---
+export interface Props {
+  imgSrc: string;
+  title: string;
+  descriptions: string[];
+  precio: string;
+  whatsappLink: string;
+}
+
+const { imgSrc, title, descriptions, precio, whatsappLink } = Astro.props;
+---
+
+<section class=" border-2 border-solid bg-[#F1F1F1] gap-1 rounded-lg lg:h-[26rem] flex flex-col justify-between">
+  <!-- Imagen y título -->
+  <div class="flex flex-col items-start">
+    <img src={imgSrc} alt={title} class="rounded-lg object-cover">
+    <span class="w-full text-center lg:text-base text-lg bg-[#1159A0] text-white p-2 mt-1">
+      {title}
+    </span>
+  </div>
+  
+  <!-- Descripciones y botones -->
+  <div class="flex flex-col items-center justify-end gap-2 pb-4">
+    <ul class="text-sm list-disc w-[80%] text-black space-y-1">
+      {descriptions.map((desc) => (
+        <li>{desc}</li>
+      ))}
+    </ul>
+    
+    <div class="w-full flex gap-1 justify-between px-2">
+      <a 
+        href={whatsappLink} 
+        target="_blank" 
+        aria-label="Contactar por WhatsApp" 
+        class="w-[45%] text-white bg-[#1c2455] hover:bg-[#767676] p-2 rounded-lg flex justify-center items-center">
+        {precio}
+      </a>
+      
+      <a 
+        href={whatsappLink} 
+        target="_blank" 
+        aria-label="Comprar producto" 
+        class="w-[45%] bg-[#1c2455] text-white p-2 rounded-lg hover:bg-[#767676] flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48" fill="none">
+          <path d="M39 32H13L8 12h36z" />
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M3 6h3.5L8 12m0 0l5 20h26l5-20z"/>
+          <circle cx="13" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <circle cx="39" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </svg>
+        Comprar
+      </a>
+    </div>
+  </div>
+</section>
