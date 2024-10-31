@@ -13,17 +13,17 @@ const { imgSrc, title, descriptions, whatsappLink } = Astro.props;
 <div class="lg:w-[30%] w-[75%] border-2 border-solid flex flex-col gap-4 bg-[#F1F1F1] rounded-lg pb-2">
   <img src={imgSrc} alt={title} class="rounded-lg">
   <div class="w-full flex justify-center">
-    <span class="w-auto text-center lg:text-2xl text-lg bg-[#1159A0] rounded-lg text-[#fff] p-2">{title}</span>
+    <span class="w-auto text-center lg:text-2xl 2xl:text-4xl text-lg bg-[#1159A0] rounded-lg text-[#fff] p-2 2xl:p-6">{title}</span>
   </div>
   <div class="w-full flex justify-center">
-    <ul class="flex flex-col list-disc w-[80%] text-[#999]">
+    <ul class="flex flex-col list-disc w-[80%] 2xl:text-2xl text-[#999]">
       {descriptions.map(desc => (
         <li>{desc}</li>
       ))}
     </ul>
   </div>
   <div class="w-full flex justify-center">
-    <a href={whatsappLink} target="_blank" class="w-auto bg-black text-white p-2 rounded-lg hover:bg-[#767676]">
+    <a href={whatsappLink} target="_blank" class="w-auto bg-black text-white p-2 2xl:text-3xl  2xl:p-4 rounded-lg hover:bg-[#767676]">
         Más Información
       </a>
   </div>
