@@ -7,7 +7,7 @@ import iconPIRA from "../../assets/iconos/iconPIRA.svg";
 import iconNODO from "../../assets/iconos/iconNODO.svg";
 import iconCUAD from "../../assets/iconos/iconCUAD.svg";
 
-
+// Importar imágenes de clientes
 import clinicaI from "../../assets/Clientes/clinicaInternacional.png";
 import bbva from "../../assets/Clientes/bbva.png";
 import plusPetrol from "../../assets/Clientes/pluspetrol.png";
@@ -29,10 +29,34 @@ import minsa from "../../assets/Clientes/minsa.png";
 import muniComas from "../../assets/Clientes/municipalidadComas.png";
 import muniAsia from "../../assets/Clientes/municipalidadAsia.png";
 import muniLima from "../../assets/Clientes/municipalidadLima.png";
----
 
+const clientesLogo = [
+    { imagen: clinicaI, nombre: "Clinica Internacional" },
+    { imagen: bbva, nombre: "BBVA" },
+    { imagen: plusPetrol, nombre: "Plus Petrol" },
+    { imagen: sanPablo, nombre: "Clinica San Pablo" },
+    { imagen: essalud, nombre: "ESSALUD" },
+    { imagen: universidadNW, nombre: "Universidad Norbert Wiener" },
+    { imagen: inpe, nombre: "INPE" },
+    { imagen: inabif, nombre: "INABIF" },
+    { imagen: ibm, nombre: "IBM" },
+    { imagen: pnp, nombre: "PNP" },
+    { imagen: universidadSMP, nombre: "Universidad San Martin de Porres" },
+    { imagen: miningS, nombre: "Mining Solutions" },
+    { imagen: granhaM, nombre: "Graña Montero" },
+    { imagen: auna, nombre: "AUNA" },
+    { imagen: ferrocarrilCA, nombre: "Ferrocarril Central Andino" },
+    { imagen: ministerioTC, nombre: "Ministerio de Transportes y Comunicaciones" },
+    { imagen: mineraA, nombre: "Compañia Minera Ares" },
+    { imagen: minsa, nombre: "MINSA" },
+    { imagen: muniComas, nombre: "Municipalidad de Comas" },
+    { imagen: muniAsia, nombre: "Municipalidad de Asia" },
+    { imagen: muniLima, nombre: "Municipalidad de Lima" },
+];
+---
 <Layout title="Clientes">
     <section class="bg-[#fff] w-full h-full flex justify-center items-center flex-col py-12 relative overflow-hidden">
+        <!-- Íconos decorativos -->
         <div class="lg:block hidden w-full h-full absolute">
             <img src={iconCir.src} alt="" class="top-96 left-4 absolute">
             <img src={iconX.src} alt="" class="bottom-96 left-4 absolute">
@@ -41,31 +65,17 @@ import muniLima from "../../assets/Clientes/municipalidadLima.png";
             <img src={iconCUAD.src} alt="" class="bottom-6 right-12 absolute">
             <img src={iconNODO.src} alt="" class="bottom-6 left-12 absolute">
         </div>
-        <div class="w-[90%] lg:text-3xl 2xl:text-6xl text-lg bg-[#192855] lg:p-4 2xl:p-10 p-2 text-[#fff] rounded">
-            <h3>La confianza de nuestros clientes es el respaldo de nuestras soluciones</h3>
+        <div class="w-full lg:text-5xl 2xl:text-6xl text-lg flex justify-center">
+            <h3 class="text-[#192855] w-[40%] text-center border-b border-[#192855]">Clientes Potenciales</h3>
         </div>
         <div class="w-[90%] grid lg:grid-cols-5 grid-cols-3 gap-2 py-10">
-            <img src={clinicaI.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={bbva.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={plusPetrol.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={sanPablo.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={essalud.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={universidadNW.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={inpe.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={inabif.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={ibm.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={pnp.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={universidadSMP.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={miningS.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={granhaM.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={auna.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={ferrocarrilCA.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={ministerioTC.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={mineraA.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={minsa.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={muniComas.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={muniAsia.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
-            <img src={muniLima.src} alt="HP" class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"/>
+            {clientesLogo.map((cliente) => (
+                <img 
+                    src={cliente.imagen.src} 
+                    alt={cliente.nombre} 
+                    class="border hover:shadow-2xl rounded-lg lg:grayscale grayscale-0 lg:hover:grayscale-0"
+                />
+            ))}
         </div>
     </section>
 </Layout>

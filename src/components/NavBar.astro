@@ -26,7 +26,7 @@ const navLinks = [
     </div>
 
     <!-- Botón del menú hamburguesa -->
-    <button id="menu-btn" class="text-black block lg:hidden focus:outline-none">
+    <button id="menu-btn" class="text-[#192855] block lg:hidden focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-8 h-8">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h22M5 16h22M5 24h22" />
       </svg>
@@ -35,7 +35,7 @@ const navLinks = [
     <!-- Menú en pantallas grandes -->
     <div class="hidden lg:flex space-x-6 h-8">
       {navLinks.map(link => (
-        <a href={link.href} class="text-[#000] hover:border-b-2 border-[#000b42] text-lg 2xl:text-3xl">
+        <a href={link.href} class="text-[#192855] hover:border-b-2 border-[#000b42] text-lg lg:text-2xl 2xl:text-3xl">
           {link.label}
         </a>
       ))}
