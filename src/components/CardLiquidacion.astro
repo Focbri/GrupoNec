@@ -10,42 +10,79 @@ export interface Props {
 const { imgSrc, title, descriptions, precio, whatsappLink } = Astro.props;
 ---
 
-<section class=" border-2 border-solid bg-[#F1F1F1] gap-1 rounded-lg lg:h-[26rem] flex flex-col justify-between">
+<section class="border-2 border-solid bg-[#F1F1F1] rounded-lg flex flex-col min-h-[400px] h-full">
   <!-- Imagen y título -->
-  <div class="flex flex-col items-start">
-    <img src={imgSrc} alt={title} class="rounded-lg object-cover">
-    <span class="w-full text-center lg:text-base text-lg bg-[#1159A0] text-white p-2 mt-1">
+  <div class="flex flex-col items-start h-[50%]">
+    <img 
+      src={imgSrc} 
+      alt={title} 
+      class="rounded-lg object-cover w-full h-full"
+    />
+  </div>
+
+  <!-- Descripciones y botones -->
+  <div class="flex flex-col items-center justify-evenly gap-2 h-[50%]">
+    <span class="w-full text-center text-lg lg:text-base bg-[#1159A0] text-white py-2">
       {title}
     </span>
-  </div>
-  
-  <!-- Descripciones y botones -->
-  <div class="flex flex-col items-center justify-end gap-2 pb-4">
-    <ul class="text-sm list-disc w-[80%] text-black space-y-1">
+    <!-- Lista de descripciones -->
+    <ul class="text-xs list-disc text-black w-[90%] space-y-1 overflow-hidden">
       {descriptions.map((desc) => (
         <li>{desc}</li>
       ))}
     </ul>
-    
-    <div class="w-full flex gap-1 justify-between px-2">
+
+    <!-- Botones -->
+    <div class="w-full flex gap-2 px-2">
+      <!-- Botón de precio -->
       <a 
         href={whatsappLink} 
         target="_blank" 
         aria-label="Contactar por WhatsApp" 
-        class="w-[45%] text-white bg-[#1c2455] hover:bg-[#767676] p-2 rounded-lg flex justify-center items-center">
+        class="flex-1 text-white bg-[#1c2455] hover:bg-[#767676] py-2 rounded-lg text-center">
         {precio}
       </a>
-      
+
+      <!-- Botón de compra -->
       <a 
         href={whatsappLink} 
         target="_blank" 
         aria-label="Comprar producto" 
-        class="w-[45%] bg-[#1c2455] text-white p-2 rounded-lg hover:bg-[#767676] flex items-center gap-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48" fill="none">
+        class="flex-1 bg-[#1c2455] text-white hover:bg-[#767676] py-2 rounded-lg flex justify-center items-center gap-1">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="1em" 
+          height="1em" 
+          viewBox="0 0 48 48" 
+          fill="none" 
+          aria-hidden="true">
+          <title>Carrito de compra</title>
           <path d="M39 32H13L8 12h36z" />
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M3 6h3.5L8 12m0 0l5 20h26l5-20z"/>
-          <circle cx="13" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-          <circle cx="39" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path 
+            stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="4" 
+            d="M3 6h3.5L8 12m0 0l5 20h26l5-20z"
+          />
+          <circle 
+            cx="13" 
+            cy="39" 
+            r="3" 
+            stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="4"
+          />
+          <circle 
+            cx="39" 
+            cy="39" 
+            r="3" 
+            stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="4"
+          />
         </svg>
         Comprar
       </a>
