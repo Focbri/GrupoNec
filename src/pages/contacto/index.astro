@@ -4,12 +4,12 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
 ---
 
 <Layout title="Contacto">
-  <main class="w-full px-8 py-12 bg-[#192855]">
-    <div class="flex flex-col gap-24">
-        <div class="w-full flex flex-row justify-between">
-            <div class="flex flex-col w-1/2  p-4">
-                <h2 class="lg:text-5xl text-center text-[#fff] border-b">Información de Contacto</h2>
-                <div class="flex flex-col mt-8 text-[#fff]">
+  <main class="w-full lg:px-8 px-4 py-12 bg-[#192855]">
+    <div class="flex flex-col lg:gap-24 gap-12">
+        <div class="w-full flex lg:flex-row flex-col justify-between gap-12">
+            <div class="flex flex-col lg:w-1/2 w-full lg:p-4">
+                <h2 class="lg:text-5xl text-3xl text-center text-[#fff] border-b">Información de Contacto</h2>
+                <div class="flex flex-col lg:mt-8 mt-2 text-[#fff]">
                     <p class="mb-2">
                         Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros para cualquier consulta, sugerencia o soporte. Tu mensaje es importante para nosotros y nos esforzamos por responder lo más pronto posible.
                     </p>
@@ -31,8 +31,8 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
                         </span>
                         <span>945 046 267</span>
                     </a>
-                    <div class="flex flex-col w-[40%] mt-4 gap-2">
-                        <h3 class="text-3xl border-b">Nuestras Redes</h3>
+                    <div class="flex flex-col lg:w-[40%] w-full mt-4 gap-2">
+                        <h3 class="lg:text-3xl text-2xl border-b">Nuestras Redes</h3>
                         <div class="flex gap-2 w-full">
                             <a href="https://www.facebook.com/grupo.nec.net" target="_blank" class="hover:text-[#000]"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
                             <a href="" class="hover:text-[#000]"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg></a>
@@ -41,9 +41,9 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-center justify-center gap-4 lg:w-[45%] w-[80%] p-4">
+            <div class="flex flex-col items-center justify-center gap-4 lg:w-[45%] w-full p-4">
                 <div class="text-center">
-                  <h2 class="uppercase text-[#1579BD] lg:text-5xl text-2xl font-bold">Contáctanos</h2>
+                  <h2 class="uppercase text-[#1579BD] lg:text-5xl text-3xl font-bold">Contáctanos</h2>
                 </div>
                 <div class="lg:w-[75%] w-full">
                   <!-- Formulario de contacto -->
@@ -63,10 +63,10 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
                 </div>
             </div>
         </div>
-        <div class="w-full flex flex-col gap-6 p-4">
-            <h2 class="lg:text-5xl text-[#fff] border-b w-[20%]">Ubícanos</h2>
+        <div class="w-full flex flex-col gap-6 lg:p-4">
+            <h2 class="lg:text-5xl text-3xl text-[#fff] border-b lg:w-[20%]">Ubícanos</h2>
             <a href="https://maps.app.goo.gl/CVHT3TS8spTQZDh99" target="_blank" class="w-full flex justify-center transition-transform duration-300 ease-in-out transform hover:scale-105">
-                <img src={mapaGN.src} alt="" class="rounded-lg w-[90%]">
+                <img src={mapaGN.src} alt="" class="rounded-lg lg:w-[90%] w-full">
             </a>
         </div>
     </div>

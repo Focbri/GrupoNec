@@ -55,7 +55,7 @@ const clientesLogo = [
 ];
 ---
 <Layout title="Clientes">
-    <section class="bg-[#fff] w-full h-full flex justify-center items-center flex-col py-12 relative overflow-hidden">
+    <section class="bg-[#fff] w-full h-full flex justify-center items-center flex-col lg:py-12 py-6 relative overflow-hidden">
         <!-- Íconos decorativos -->
         <div class="lg:block hidden w-full h-full absolute">
             <img src={iconCir.src} alt="" class="top-96 left-4 absolute">
@@ -65,10 +65,10 @@ const clientesLogo = [
             <img src={iconCUAD.src} alt="" class="bottom-6 right-12 absolute">
             <img src={iconNODO.src} alt="" class="bottom-6 left-12 absolute">
         </div>
-        <div class="w-full lg:text-5xl 2xl:text-6xl text-lg flex justify-center">
-            <h3 class="text-[#192855] w-[40%] text-center border-b border-[#192855]">Clientes Potenciales</h3>
+        <div class="w-full lg:text-5xl 2xl:text-6xl text-3xl flex justify-center">
+            <h3 class="text-[#192855] lg:w-[40%] w-[80%] text-center border-b border-[#192855]">Clientes Potenciales</h3>
         </div>
-        <div class="w-[90%] grid lg:grid-cols-5 grid-cols-3 gap-2 py-10">
+        <div class="w-[90%] grid lg:grid-cols-5 grid-cols-3 gap-2 lg:py-10 py-5">
             {clientesLogo.map((cliente) => (
                 <img 
                     src={cliente.imagen.src} 
