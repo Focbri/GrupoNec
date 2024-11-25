@@ -2,7 +2,7 @@
 // Archivo: index.astro
 import Layout from "../../layouts/Layout.astro";
 import CardLiquidacion from "../../components/CardLiquidacion.astro";
-import { swCisco } from "../../data/productosData.ts";
+import { switches } from "../../data/productosData.ts";
 ---
 
 <Layout title="Prod. Redes y Conectividad">
@@ -13,7 +13,7 @@ import { swCisco } from "../../data/productosData.ts";
       </div>
       <div class="flex w-full justify-center">
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:w-[90%] w-[60%] items-center justify-center">
-          {swCisco.map((swCiscoItem) => (
+          {switches.map((swCiscoItem) => (
             <CardLiquidacion 
               imgSrc={swCiscoItem.imgSrc}
               title={swCiscoItem.title}

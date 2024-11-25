@@ -7,10 +7,10 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
   <main class="w-full lg:px-8 px-4 py-12 bg-[#192855]">
     <div class="flex flex-col lg:gap-24 gap-12">
         <div class="w-full flex lg:flex-row flex-col justify-between gap-12">
-            <div class="flex flex-col lg:w-1/2 w-full lg:p-4">
-                <h2 class="lg:text-5xl text-3xl text-center text-[#fff] border-b">Información de Contacto</h2>
+            <div class="flex flex-col lg:w-1/2 2xl:w-[40%] w-full lg:p-4">
+                <h2 class="lg:text-5xl text-3xl text-center 2xl:text-left 2xl:text-6xl text-[#fff] border-b">Información de Contacto</h2>
                 <div class="flex flex-col lg:mt-8 mt-2 text-[#fff]">
-                    <p class="mb-2">
+                    <p class="mb-2 2xl:text-xl">
                         Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros para cualquier consulta, sugerencia o soporte. Tu mensaje es importante para nosotros y nos esforzamos por responder lo más pronto posible.
                     </p>
                     <a href="mailto:ventas@gruponec.net" target="_blank" class="flex items-center gap-1 hover:text-[#000]">
@@ -31,7 +31,7 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
                         </span>
                         <span>945 046 267</span>
                     </a>
-                    <div class="flex flex-col lg:w-[40%] w-full mt-4 gap-2">
+                    <div class="flex flex-col lg:w-[40%] w-full mt-4 2xl:mt-8 gap-2">
                         <h3 class="lg:text-3xl text-2xl border-b">Nuestras Redes</h3>
                         <div class="flex gap-2 w-full">
                             <a href="https://www.facebook.com/grupo.nec.net" target="_blank" class="hover:text-[#000]"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
@@ -43,11 +43,11 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
             </div>
             <div class="flex flex-col items-center justify-center gap-4 lg:w-[45%] w-full p-4">
                 <div class="text-center">
-                  <h2 class="uppercase text-[#1579BD] lg:text-5xl text-3xl font-bold">Contáctanos</h2>
+                  <h2 class="uppercase text-[#1579BD] lg:text-5xl 2xl:text-6xl text-3xl font-bold">Contáctanos</h2>
                 </div>
                 <div class="lg:w-[75%] w-full">
                   <!-- Formulario de contacto -->
-                  <form id="contactForm" class="text-[#000] text-center flex flex-col gap-2">
+                  <form id="contactForm" class="text-[#000] text-center flex flex-col gap-2 2xl:hidden">
                     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellido" class="p-2 border rounded-lg text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" required>
                     <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de contacto" class="p-2 border rounded-lg text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" required>
                     <input type="email" id="correo" name="correo" placeholder="Déjanos tu correo electrónico" class="p-2 border rounded-lg text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" required>
@@ -56,6 +56,15 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
                         <input type="submit" class="bg-[#00bbbc] text-[#fff] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:cursor-pointer font-bold text-lg border border-[#00bbbc] rounded-lg lg:py-2 py-2 lg:w-[50%] w-2/5" value="Enviar">
                     </div>
                 </form>
+                <form id="contactForm" class="text-[#000] text-center hidden flex-col gap-2 2xl:flex">
+                  <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellido" class="p-2 border text-lg rounded-lg text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" required>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de contacto" class="p-2 border text-lg rounded-lg text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" required>
+                  <input type="email" id="correo" name="correo" placeholder="Déjanos tu correo electrónico" class="p-2 border text-lg rounded-lg text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" required>
+                  <textarea id="mensaje" name="mensaje" placeholder="Ingresa tu consulta" class="p-2 border rounded-lg text-lg resize-none text-left focus:outline-none focus:border-[#00bbbc] focus:ring-2 focus:ring-[#00bbbc]" rows="10" cols="20" required></textarea>
+                  <div class="flex justify-center items-center w-full">
+                      <input type="submit" class="bg-[#00bbbc] text-[#fff] transition-transform duration-300 ease-in-out transform hover:scale-105 hover:cursor-pointer font-bold text-lg border border-[#00bbbc] rounded-lg lg:py-2 py-2 w-1/3" value="Enviar">
+                  </div>
+              </form>
                   <!-- Contenedor de notificación -->
                   <div id="notification" class="hidden fixed top-10 left-1/2 transform -translate-x-1/2 p-4 border rounded-md shadow-lg bg-gray-100">
                     <p id="notificationMessage" class="text-center"></p>
@@ -64,7 +73,7 @@ import mapaGN from "../../assets/Contacto/mapaGN.png";
             </div>
         </div>
         <div class="w-full flex flex-col gap-6 lg:p-4">
-            <h2 class="lg:text-5xl text-3xl text-[#fff] border-b lg:w-[20%]">Ubícanos</h2>
+            <h2 class="lg:text-5xl text-3xl 2xl:text-6xl text-[#fff] border-b lg:w-[20%]">Ubícanos</h2>
             <a href="https://maps.app.goo.gl/CVHT3TS8spTQZDh99" target="_blank" class="w-full flex justify-center transition-transform duration-300 ease-in-out transform hover:scale-105">
                 <img src={mapaGN.src} alt="" class="rounded-lg lg:w-[90%] w-full">
             </a>

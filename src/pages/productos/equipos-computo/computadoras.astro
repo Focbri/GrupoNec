@@ -1,0 +1,29 @@
+---
+// Archivo: index.astro
+import Layout from "../../../layouts/Layout.astro";
+import CardLiquidacion from "../../../components/CardLiquidacion.astro";
+import { computadoras } from "../../../data/productosData.ts";
+---
+
+<Layout title="Computadora - Grupo Nec">
+  <section class="bg-[#fff] my-8">
+    <div class="w-full flex flex-col">
+      <div class="w-full flex justify-center mt-8 mb-6">
+        <h2 class="w-[90%] lg:text-3xl text-lg border-b-2 text-[#192855] border-[#192855]">Computadora</h2>
+      </div>
+      <div class="flex w-full justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:w-[90%] w-[60%] items-center justify-center">
+          {computadoras.map((computadorasItem) => (
+            <CardLiquidacion 
+              imgSrc={computadorasItem.imgSrc}
+              title={computadorasItem.title}
+              descriptions={computadorasItem.descriptions}
+              precio={computadorasItem.precio}
+              whatsappLink={computadorasItem.whatsappLink}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

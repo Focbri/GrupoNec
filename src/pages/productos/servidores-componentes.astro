@@ -1,11 +1,29 @@
 ---
+// Archivo: index.astro
 import Layout from "../../layouts/Layout.astro";
+import CardLiquidacion from "../../components/CardLiquidacion.astro";
+import { servidores } from "../../data/productosData.ts";
 ---
 
-<Layout title="Prod. Servidores y Componentes">
-    <section class="bg-rose-500">
-        <div>
-            <h2>Servidores y componentes</h2>
+<Layout title="Prod. Redes y Conectividad">
+  <section class="bg-[#fff] my-8">
+    <div class="w-full flex flex-col">
+      <div class="w-full flex justify-center mt-8 mb-6">
+        <h2 class="w-[90%] lg:text-3xl text-lg border-b-2 text-[#192855] border-[#192855]">Redes y Conectividad</h2>
+      </div>
+      <div class="flex w-full justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:w-[90%] w-[60%] items-center justify-center">
+          {servidores.map((servidoresItem) => (
+            <CardLiquidacion 
+              imgSrc={servidoresItem.imgSrc}
+              title={servidoresItem.title}
+              descriptions={servidoresItem.descriptions}
+              precio={servidoresItem.precio}
+              whatsappLink={servidoresItem.whatsappLink}
+            />
+          ))}
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </Layout>

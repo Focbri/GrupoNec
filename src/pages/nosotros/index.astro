@@ -1,13 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import grupoE from "../../assets/Nosotros/grupoEmpresa.png";
-import recursosH from "../../assets/Nosotros/recursosH.png";
-import ventas from "../../assets/Nosotros/ventas.png";
 import tiServicio from "../../assets/Nosotros/tiServicio.png";
 import soporteTecnico from "../../assets/Nosotros/soporteTecnico.png";
 import RRHH from "../../assets/Nosotros/RRHH.png";
 import logistica from "../../assets/Nosotros/logistica.png";
 import desarrolloTEC from "../../assets/Nosotros/desarrolloTEC.png";
+import ventas from "../../assets/Nosotros/ventas.png";
+import contabilidad from "../../assets/Nosotros/contabilidad.png"
+import marketing from "../../assets/Nosotros/marketing.png"
 import atencionCliente from "../../assets/Nosotros/atencionCliente.png";
 ---
 
@@ -63,27 +64,27 @@ import atencionCliente from "../../assets/Nosotros/atencionCliente.png";
                     </div>
                 </div>
                 <div class="relative overflow-hidden group">
+                    <img src={ventas.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
+                    <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        Ventas
+                    </div>
+                </div>
+                <div class="relative overflow-hidden group">
+                    <img src={contabilidad.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
+                    <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        Contabilidad
+                    </div>
+                </div>
+                <div class="relative overflow-hidden group">
+                    <img src={marketing.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
+                    <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                        Marketing
+                    </div>
+                </div>
+                <div class="relative overflow-hidden group">
                     <img src={atencionCliente.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
                     <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
                         Atención Cliente
-                    </div>
-                </div>
-                <div class="relative overflow-hidden group">
-                    <img src={atencionCliente.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
-                    <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
-                        Calidad
-                    </div>
-                </div>
-                <div class="relative overflow-hidden group">
-                    <img src={atencionCliente.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
-                    <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
-                        Calidad
-                    </div>
-                </div>
-                <div class="relative overflow-hidden group">
-                    <img src={atencionCliente.src} alt="" class="w-full transition duration-300 ease-in-out group-hover:opacity-70 group-hover:scale-110 opacity-60 lg:opacity-100 rounded">
-                    <div class="absolute inset-0 text-center flex items-center justify-center text-[#192855] text-2xl 2xl:text-6xl font-semibold opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
-                        Calidad
                     </div>
                 </div>
                 <!-- Repite este bloque para las demás imágenes -->
