@@ -21,12 +21,12 @@ const { imgSrc, title, descriptions, precio, whatsappLink } = Astro.props;
   </div>
 
   <!-- Descripciones y botones -->
-  <div class="flex flex-col items-center justify-evenly gap-2 h-[50%]">
+  <div class="flex flex-col items-center justify-between gap-2 pb-2 h-[50%]">
     <span class="w-full text-center text-base lg:text-base bg-[#1159A0] text-white py-2">
       {title}
     </span>
     <!-- Lista de descripciones -->
-    <ul class="text-xs list-disc text-black w-[90%] space-y-1 overflow-hidden">
+    <ul class="text-xs lg:text-sm text-black w-[96%]">
       {descriptions.map((desc) => (
         <li>{desc}</li>
       ))}
