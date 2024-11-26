@@ -34,33 +34,29 @@ const { title } = Astro.props;
 	}
 
 	@font-face {
-    font-family: "HelveticaNeue";
-    src: url("/font/HelveticaNeuelt.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-      font-display: swap;
-  }
-  @font-face {
-      font-family: "HelveticaNeue";
-      src: url("/font/HelveticaNeueHv.ttf") format("truetype");
-      font-weight: bold;
-      font-style: normal;
-      font-display: swap;
-  }
-  @font-face {
-      font-family: "HelveticaNeue";
-      src: url("/font/HelveticaNeueUltraLightv130.ttf") format("truetype");
-      font-weight: 200; /* Lighter weight */
-      font-style: normal;
-      font-display: swap;
-  }
-  @font-face {
-      font-family: "HelveticaNeue";
-      src: url("/font/Light.ttf") format("truetype");
-      font-weight: 300; /* Light weight */
-      font-style: normal;
-      font-display: swap;
-  } 
+        font-family: "HelveticaNeue";
+        src: url("/font/HelveticaNeuelt.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaNeue";
+        src: url("/font/HelveticaNeueHv.ttf") format("truetype");
+        font-weight: bold;
+        font-style: bold;
+      }
+      @font-face {
+        font-family: "HelveticaNeue";
+        src: url("/font/HelveticaNeueUltraLightv130.ttf") format("truetype");
+        font-weight: lighter;
+        font-style: lighter;
+      }
+      @font-face {
+        font-family: "HelveticaNeue";
+        src: url("/font/Light.ttf") format("truetype");
+        font-weight: light;
+        font-style: light;
+      }
 
 	body{
 		font-family: "HelveticaNeue", sans-serif ;
