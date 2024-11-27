@@ -1,71 +1,127 @@
 ---
 // Soluciones.astro
 import CardSolucion from '../components/CardSolucion.astro';
-import repEquipos from "../assets/Soluciones/reparacionEquipos.png";
-import cableadoRed from "../assets/Soluciones/cableadoRed.png";
-import licSoftware from "../assets/Soluciones/licenciaSoftware.png";
-import installCam from "../assets/Soluciones/instCamaras.png";
-import servidores from "../assets/Soluciones/serServidores.png";
-import seguridadInfo from "../assets/Soluciones/seguridadInf.png";
+
+import softwareDev from "../assets/Soluciones/desarrolloSoftware.png";
+import analisisData from "../assets/Soluciones/analisisDatos.png";
+import webDev from "../assets/Soluciones/desarrolloWeb.png";
+import infraestructuraTI from "../assets/Soluciones/infraestructuraTI.png";
+import servidorStorage from "../assets/Soluciones/servidorStorage.png";
+import soporteEquip from "../assets/Soluciones/soporteEquip.png";
+import mantSistem from "../assets/Soluciones/mantenimientoSistem.png";
+import dominioHost from "../assets/Soluciones/dominioHost.png";
+import ciberseguridad from "../assets/Soluciones/ciberseguridad.png";
+import virtualizacion from "../assets/Soluciones/virtualizacion.png";
+import cloud from "../assets/Soluciones/cloud.png";
 
 const soluciones = [
   {
-    imgSrc: repEquipos.src,
-    title: "Reparación de Equipos",
-    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    imgSrc: softwareDev.src,
+    title: "Desarrollo de Software",
+    descriptions: ["Creación de aplicaciones a medida para optimizar procesos empresariales.", "Integración con sistemas existentes para una mayor eficiencia.", "Soluciones escalables adaptadas al crecimiento del negocio.", "Uso de metodologías ágiles para entregar resultados rápidos y efectivos."],
     whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Reparación%20de%20Equipos"
   },
   {
-    imgSrc: cableadoRed.src,
-    title: "Cableado de Red",
-    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    imgSrc: analisisData.src,
+    title: "Análisis de Datos",
+    descriptions: ["Extracción de información valiosa para la toma de decisiones estratégicas.", "Implementación de paneles de control con métricas clave.", "Uso de herramientas avanzadas de análisis predictivo.", "Identificación de tendencias y patrones en grandes volúmenes de datos."],
     whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Cableado%20de%20Red"
   },
   {
-    imgSrc: licSoftware.src,
-    title: "Licencia de Software",
-    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    imgSrc: webDev.src,
+    title: "Desarrollo Web",
+    descriptions: ["Diseño responsivo adaptado a dispositivos móviles y escritorio.", "Optimización de sitios web para mayor velocidad y rendimiento.", "Implementación de sistemas de gestión de contenidos (CMS).", "Creación de tiendas online seguras y funcionales."],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Cableado%20de%20Red"
+  },
+  {
+    imgSrc: infraestructuraTI.src,
+    title: "Infraestructura TI",
+    descriptions: ["Diseño y configuración de redes empresariales robustas.", "Implementación de soluciones de alta disponibilidad y redundancia.", "Gestión eficiente de servidores y centros de datos.", "Consultoría para escalabilidad de infraestructura según necesidades."],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Cableado%20de%20Red"
+  },
+  {
+    imgSrc: servidorStorage.src,
+    title: "Servidores y Storage",
+    descriptions: ["Configuración y mantenimiento de servidores de alto rendimiento.", "Soluciones de almacenamiento centralizado para grandes volúmenes de datos.", "Implementación de sistemas de respaldo y recuperación ante desastres.", "Seguridad avanzada para la protección de datos críticos."],
     whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Licencia%20de%20Software"
   },
   {
-    imgSrc: installCam.src,
-    title: "Instalación de Cámaras",
-    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    imgSrc: soporteEquip.src,
+    title: "Soporte Técnico",
+    descriptions: ["Diagnóstico y resolución rápida de problemas técnicos.", "Mantenimiento preventivo y correctivo de equipos y sistemas.", "Atención remota y presencial según necesidades del cliente.", "Capacitación para el uso eficiente de herramientas tecnológicas."],
     whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%Instalación%20de%20Cámaras"
   },
   {
-    imgSrc: servidores.src,
-    title: "Servidores",
-    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    imgSrc: mantSistem.src,
+    title: "Mantenimiento de Sistemas",
+    descriptions: ["Actualización de sistemas operativos y software empresarial.", "Identificación y corrección de vulnerabilidades de seguridad.", "Optimización del rendimiento de sistemas existentes.", "Gestión proactiva de incidentes y fallos."],
     whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Servicio%20de%20Servidores"
   },
   {
-    imgSrc: seguridadInfo.src,
-    title: "Seguridad de la Información",
-    descriptions: ["Descripción 1", "Descripción 2", "Descripción 3"],
+    imgSrc: dominioHost.src,
+    title: "Hosting/Dominio",
+    descriptions: ["Registro y renovación de dominios para presencia online.", "Hosting confiable con soporte 24/7.", "Certificados SSL para seguridad web.", "Espacio en la nube escalable según las necesidades del cliente."],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Seguridad%20de%20la%20Información"
+  },
+  {
+    imgSrc: ciberseguridad.src,
+    title: "Ciberseguridad",
+    descriptions: ["Auditorías para identificar vulnerabilidades en sistemas.", "Implementación de firewalls y soluciones antivirus avanzadas.", "Monitoreo continuo para detectar y mitigar amenazas.", "Capacitación para fomentar una cultura de seguridad informática."],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Seguridad%20de%20la%20Información"
+  },
+  {
+    imgSrc: virtualizacion.src,
+    title: "Solución Audiovisual",
+    descriptions: ["Instalación y configuración de Pantallas LED", "Ideal para eventos, publicidad y señalización digital.", "Integración multimedia y control remoto eficiente.", "Montaje seguro y adaptado a tus necesidades"],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Seguridad%20de%20la%20Información"
+  },
+  {
+    imgSrc: softwareDev.src,
+    title: "Automatización de Procesos",
+    descriptions: ["Reducción de tiempos operativos con flujos automatizados.", "Minimización de errores manuales en tareas repetitivas.", "Aumento de la productividad con sistemas inteligentes.", "Integración de herramientas automatizadas con sistemas existentes."],
+    whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Seguridad%20de%20la%20Información"
+  },
+  {
+    imgSrc: cloud.src,
+    title: "Soluciones Cloud",
+    descriptions: ["Migración de infraestructura a la nube para mayor flexibilidad.", "Almacenamiento seguro con acceso desde cualquier lugar.", "Escalabilidad automática según la demanda empresarial.", "Reducción de costos en hardware y mantenimiento local."],
     whatsappLink: "https://wa.me/+51945046267?text=Hola,%20quiero%20más%20información%20sobre%20Seguridad%20de%20la%20Información"
   }
 ];
 ---
 
 <section id="soluciones" class="w-full my-12">
-  <div class="lg:h-24 2xl:h-32 h-14 flex justify-center items-center font-bold lg:text-3xl bg-[#192855] text-[#fff] mb-8">
-    <h2 class="lg:text-5xl 2xl:text-7xl text-center text-2xl font-light">Portafolio de Servicios</h2>
+  <div class="lg:h-24 2xl:h-32 h-14 flex justify-center items-center font-bold lg:text-3xl mb-4">
+    <h2 class="lg:text-5xl 2xl:text-7xl text-center text-2xl font-light border-b border-[#192855] text-[#192855]">Portafolio de Servicios</h2>
   </div>
   <div class="relative">
-    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000000" class="hidden lg:flex w-[90%] items-center">
+    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="8000000" class="hidden lg:flex w-[85%] items-center">
       <swiper-slide>
-        <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
+        <div class="flex lg:gap-6 gap-2 w-full h-full justify-center items-center">
           <CardSolucion imgSrc={soluciones[0].imgSrc} title={soluciones[0].title} descriptions={soluciones[0].descriptions} whatsappLink={soluciones[0].whatsappLink}/>
           <CardSolucion imgSrc={soluciones[1].imgSrc} title={soluciones[1].title} descriptions={soluciones[1].descriptions} whatsappLink={soluciones[1].whatsappLink}/>
           <CardSolucion imgSrc={soluciones[2].imgSrc} title={soluciones[2].title} descriptions={soluciones[2].descriptions} whatsappLink={soluciones[2].whatsappLink}/>
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
+        <div class="flex lg:gap-6 gap-2 w-full h-full justify-center items-center">
           <CardSolucion imgSrc={soluciones[3].imgSrc} title={soluciones[3].title} descriptions={soluciones[3].descriptions} whatsappLink={soluciones[3].whatsappLink}/>
           <CardSolucion imgSrc={soluciones[4].imgSrc} title={soluciones[4].title} descriptions={soluciones[4].descriptions} whatsappLink={soluciones[4].whatsappLink}/>
           <CardSolucion imgSrc={soluciones[5].imgSrc} title={soluciones[5].title} descriptions={soluciones[5].descriptions} whatsappLink={soluciones[5].whatsappLink}/>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="flex lg:gap-6 gap-2 w-full h-full justify-center items-center">
+          <CardSolucion imgSrc={soluciones[6].imgSrc} title={soluciones[6].title} descriptions={soluciones[6].descriptions} whatsappLink={soluciones[3].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[7].imgSrc} title={soluciones[7].title} descriptions={soluciones[4].descriptions} whatsappLink={soluciones[4].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[8].imgSrc} title={soluciones[8].title} descriptions={soluciones[5].descriptions} whatsappLink={soluciones[5].whatsappLink}/>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="flex lg:gap-6 gap-2 w-full h-full justify-center items-center">
+          <CardSolucion imgSrc={soluciones[9].imgSrc} title={soluciones[9].title} descriptions={soluciones[3].descriptions} whatsappLink={soluciones[3].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[10].imgSrc} title={soluciones[10].title} descriptions={soluciones[4].descriptions} whatsappLink={soluciones[4].whatsappLink}/>
+          <CardSolucion imgSrc={soluciones[11].imgSrc} title={soluciones[11].title} descriptions={soluciones[5].descriptions} whatsappLink={soluciones[5].whatsappLink}/>
         </div>
       </swiper-slide>
     </swiper-container>

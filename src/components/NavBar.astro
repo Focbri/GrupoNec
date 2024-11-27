@@ -10,8 +10,8 @@ const navLinks = [
   { href: "/contacto", label: "Contacto" }
 ];
 ---
-<div class="bg-[#192855] lg:h-[10vh] h-[5vh]">
-  <ul class="flex w-full justify-center items-center gap-8 h-full text-[#fff] text-xs lg:text-base 2xl:text-2xl">
+<div class="bg-[#192855] lg:h-[6vh] h-[5vh]">
+  <ul class="flex w-full justify-center items-center gap-8 h-full text-[#fff] text-xs lg:text-sm 2xl:text-2xl">
     <li><a href="mailto:ventas@gruponec.net" target="_blank" class="hover:text-[#F7D2A9]">Contacto: ventas@gruponec.net</a></li>
     <li><a href="https://wa.me/51945046267?text=Hola,%20me%20interesa%20más%20información." target="_blank" class="hover:text-[#F7D2A9]">Teléfono: +51 945 046 267</a></li>
   </ul>
@@ -35,7 +35,7 @@ const navLinks = [
     <!-- Menú en pantallas grandes -->
     <div class="hidden lg:flex space-x-6 h-8">
       {navLinks.map(link => (
-        <a href={link.href} class="text-[#192855] hover:border-b-2 border-[#000b42] text-lg lg:text-2xl 2xl:text-3xl">
+        <a href={link.href} class="text-[#192855] hover:border-b-2 border-[#000b42] text-lg lg:text-xl 2xl:text-3xl">
           {link.label}
         </a>
       ))}

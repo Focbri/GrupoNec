@@ -1,0 +1,79 @@
+---
+// Soluciones.astro
+import CardSolucion from '../components/CardSolucion.astro';
+
+import windowLog from "../assets/Ctg_Prod/software/sistemaop.webp";
+import adobe from "../assets/Ctg_Prod/software/adobe.webp";
+import eset from "../assets/Ctg_Prod/software/eset.webp";
+import office from "../assets/Ctg_Prod/software/office.webp";
+import sql from "../assets/Ctg_Prod/software/sql.webp";
+import autoDesk from "../assets/Ctg_Prod/software/autodesk.webp";
+
+import proyector from "../assets/Ctg_Prod/entrada_salida/proyectores.webp";
+import scanners from "../assets/Ctg_Prod/entrada_salida/scanners.webp";
+
+import ups from "../assets/Ctg_Prod/equip_protect_electrica/ups.webp";
+import transformadores from "../assets/Ctg_Prod/equip_protect_electrica/transformadores.webp";
+
+import discoExterno from "../assets/Ctg_Prod/almacenamiento/disco_externo.webp";
+import discoInterno from "../assets/Ctg_Prod/almacenamiento/disco_interno.webp";
+
+import memoria_ram from "../assets/Ctg_Prod/componentes_hardware/memoria_ram.webp";
+import motherboard from "../assets/Ctg_Prod/componentes_hardware/motherboard.webp";
+import partesPc from "../assets/Ctg_Prod/componentes_hardware/partes_pc.webp";
+
+import impresoras from "../assets/Ctg_Prod/perifericos_accesorios/impresoras.webp";
+import camaras from "../assets/Ctg_Prod/perifericos_accesorios/camaras_seguridad.webp";
+import suministrosImpre from "../assets/Ctg_Prod/perifericos_accesorios/suministros_impresora.webp";
+import baterias from "../assets/Ctg_Prod/perifericos_accesorios/baterias.webp";
+import lamparas from "../assets/Ctg_Prod/perifericos_accesorios/lamparas_proyector.webp";
+import adaptadores from "../assets/Ctg_Prod/perifericos_accesorios/adaptadores.webp";
+
+import kvmSwitch from "../assets/Ctg_Prod/redes_conectividad/kvm_switch.webp";
+import switches from "../assets/Ctg_Prod/redes_conectividad/switch.webp";
+import router from "../assets/Ctg_Prod/redes_conectividad/router.webp";
+
+import laptop from "../assets/Ctg_Prod/equipos/laptop.webp";
+import pc from "../assets/Ctg_Prod/equipos/pc.webp";
+import pda from "../assets/Ctg_Prod/equipos/pda_handheld.webp";
+
+import servidor from "../assets/Ctg_Prod/servidores_componentes/servidores.webp";
+import gabinetes from "../assets/Ctg_Prod/servidores_componentes/gabinetes_racks.webp";
+import tapeBack from "../assets/Ctg_Prod/servidores_componentes/tape_backups.webp";
+import discoServ from "../assets/Ctg_Prod/servidores_componentes/disco_duro.webp";
+import memoriaServ from "../assets/Ctg_Prod/servidores_componentes/memoria.webp";
+---
+
+<section id="soluciones" class="w-full my-12">
+  <div class="lg:h-24 2xl:h-32 h-14 flex justify-center items-center font-bold lg:text-3xl bg-[#192855] text-[#fff] mb-8">
+    <h2 class="lg:text-5xl 2xl:text-7xl text-center text-2xl font-light">Categoria de Productos</h2>
+  </div>
+  <div class="relative">
+    <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000000" class="hidden lg:flex w-[90%] items-center">
+      <swiper-slide>
+        <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
+          <a href=""><img src={adobe.src} alt=""></a>
+          <a href=""><img src={adobe.src} alt=""></a>
+          <a href=""><img src={adobe.src} alt=""></a>
+          <a href=""><img src={adobe.src} alt=""></a>
+          <a href=""><img src={adobe.src} alt=""></a>
+          <a href=""><img src={adobe.src} alt=""></a>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="flex lg:gap-4 gap-2 w-full h-full justify-center items-center">
+            <a href=""><img src={adobe.src} alt=""></a>
+            <a href=""><img src={adobe.src} alt=""></a>
+            <a href=""><img src={adobe.src} alt=""></a>
+            <a href=""><img src={adobe.src} alt=""></a>
+            <a href=""><img src={adobe.src} alt=""></a>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <script>
+    import { register } from "swiper/element/bundle";
+    register();
+  </script>
+</section>
