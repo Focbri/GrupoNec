@@ -10,7 +10,7 @@ export interface Props {
 const { imgSrc, title, descriptions, precio, whatsappLink } = Astro.props;
 ---
 
-<section class="border-2 border-solid bg-[#F1F1F1] flex flex-col min-h-[400px] h-full">
+<section class="border-2 border-solid bg-[#F1F1F1] flex flex-col min-h-[400px] h-full rounded-b-lg">
   <!-- Imagen y título -->
   <div class="flex flex-col items-start h-[50%]">
     <img 
@@ -39,7 +39,7 @@ const { imgSrc, title, descriptions, precio, whatsappLink } = Astro.props;
         href={whatsappLink} 
         target="_blank" 
         aria-label="Contactar por WhatsApp" 
-        class="flex-1 text-white bg-[#1c2455] hover:bg-[#767676] py-2 rounded-lg text-sm lg:text-base text-center">
+        class="flex-1 text-white bg-[#1c2455] hover:bg-[#00A7CC] py-2 rounded-lg text-sm lg:text-base text-center">
         {precio}
       </a>
 
@@ -48,7 +48,7 @@ const { imgSrc, title, descriptions, precio, whatsappLink } = Astro.props;
         href={whatsappLink} 
         target="_blank" 
         aria-label="Comprar producto" 
-        class="flex-1 bg-[#1c2455] text-white hover:bg-[#767676] py-2 rounded-lg text-sm lg:text-base flex justify-center items-center gap-1">
+        class="flex-1 bg-[#1c2455] text-white hover:bg-[#00A7CC] py-2 rounded-lg text-sm lg:text-base flex justify-center items-center gap-1">
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           width="1em" 

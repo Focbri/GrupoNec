@@ -10,13 +10,13 @@ export interface Props {
 const { imgSrc, title, descriptions, whatsappLink } = Astro.props;
 ---
 
-<div class="lg:w-[25%] w-[75%] border border-[#192855] border-solid flex flex-col gap-2 bg-[#F1F1F1] rounded-lg pb-2 h-full lg:min-h-[650px]">
+<div class="lg:w-[25%] w-[70%] border border-[#192855] border-solid flex flex-col gap-2 bg-[#F1F1F1] rounded-lg pb-2 h-full lg:min-h-[650px] min-h-[600px]">
   <div class="w-full flex justify-center flex-col">
     <img src={imgSrc} alt={title} class="rounded-t-lg">
     <span class="w-auto text-center lg:text-xl 2xl:text-4xl text-lg bg-[#192855] text-[#fff] py-2 px-4 2xl:p-6">{title}</span>
   </div>
   <div class="w-full flex justify-center flex-grow">
-    <ul class="flex flex-col list-disc w-full pl-6 2xl:text-2xl text-[#999]">
+    <ul class="flex flex-col list-disc w-full pl-6 pr-1 2xl:text-2xl text-sm text-[#000]">
       {descriptions.map(desc => (
         <li>{desc}</li>
       ))}
